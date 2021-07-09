@@ -1,0 +1,19 @@
+@import "~normalize.css";
+
+//abstract
+@import"/aboutUs/styles/abstract/_constants";
+@import"/aboutUs/styles/abstract/_mixin";
+@import"/aboutUs/styles/abstract/_placeholders";
+
+
+
+@import"/aboutUs/styles/base/_base";
+
+@import"/aboutUs/styles/components/_headerAboutUs";
+@import"/aboutUs/styles/components/_aboutUs";
+@import"/aboutUs/styles/components/_ourTeamAboutUs";
+@import"/aboutUs/styles/components/_rectangle4AboutUs";
+@import"/aboutUs/styles/components/_footerAboutUs";
+
+
+

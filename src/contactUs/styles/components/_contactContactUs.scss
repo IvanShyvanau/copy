@@ -1,0 +1,133 @@
+.contact{
+  color: $color-text;
+  &-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &-titles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &-titles-border{
+    margin: auto;
+    width: 66px;
+    height: 2px;
+    background-color: #6FB048;
+    margin-top: 0px;
+  }
+  &-titles-text{
+    width: 70%;
+    text-align: center;
+    line-height: 1.6rem;
+    margin-top: 15px;
+  }
+  &-forms{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 76px;
+  }
+  &-form-list{
+
+  }
+  &-form{
+    display: flex;
+    flex-direction: column;
+  }
+  &-nameInput, &-emailInput, &-phoneInput{
+    padding: 18px 453px 18px 21px;
+    margin-bottom: 25px;
+    color: $color-text;
+  }
+  &-message{
+    resize: none;
+    &::placeholder{
+      padding: 18px 453px 18px 21px;
+    }
+  }
+  &-btn{
+    margin-top: 23px;
+    text-transform: uppercase;
+    @extend %font-testimonials;
+    @include font($height: 1rem, $size: 1.3rem, $weigh: normal);
+    padding: 18px 43px;
+    width: 30%;
+    background-color: $color-primary;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+  }
+  &-contacts{
+    width: 30%;
+    border: 1px dashed $color-text;
+    height: 274px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &-titleContacts{
+    margin-top: 39px;
+    font-size: 2.2rem;
+    color: #0F5F5C;
+    text-align: center;
+    margin-left: 43px;
+  }
+  &-adress{
+    margin-top: 35px;
+    display: flex;
+    margin-left: 43px;
+    font-size: 1.5rem;
+  }
+  &-imgAdress{
+    width: 14px;
+    height: 20px;
+  }
+  &-adressText{
+    margin-left: 11px;
+    line-height: 1.5rem;
+  }
+  &-phone{
+    margin-top: 35px;
+    display: flex;
+    margin-left: 43px;
+    font-size: 1.5rem;
+  }
+  &-number{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+  }
+  &-numberLink{
+    text-decoration: none;
+    color:$color-text;
+    font-size: 1.5rem;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  &-email{
+    margin-top: 35px;
+    display: flex;
+    margin-left: 43px;
+    font-size: 1.5rem;
+  }
+  &-imgMail{
+    width: 18px;
+    height: 12px;
+  }
+  &-emailAdress{
+    margin-left: 11px;
+  }
+  &-emailLink{
+    text-decoration: none;
+    color:$color-text;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0F5F5C;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+} 

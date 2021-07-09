@@ -1,0 +1,41 @@
+.testimonials{
+  color: $color-text;
+  &-wrapper{
+    display: flex;
+    margin-top: 137px;
+    
+    &-2-column{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      &-discription{
+        display: flex;
+        flex-direction: column;
+        width: 28%;
+        &-text{
+          @extend %font-testimonials;
+          @include font($height: 3.8rem, $size: 2.2rem, $weigh: normal);
+          color: #83A7A5;
+        }
+        &-name{ 
+          color: $color-primary;
+          margin-top: 27px;
+        }
+        &-post{
+          margin-top: 10px;
+        }
+      }
+      &-photos{
+        background-color: #000;
+        border-radius: 50%;
+      }
+      &-photo{
+        width: 405px;
+        height: 401px;
+        border-radius: 50%;
+      }
+    }
+    
+  }
+  
+}

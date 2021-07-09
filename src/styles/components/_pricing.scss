@@ -1,0 +1,149 @@
+.pricing{
+  color: $color-text;
+  &-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-3column{
+      display: flex;
+      width: 70%;
+      justify-content: center;
+      margin: auto;
+      &-block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25%;
+        border: 2px solid $color-text;
+        margin-top: 38px;
+        box-sizing: border-box;
+        &-plan{
+          @extend %font-title;
+          @include font($height: 1rem, $size: 1.5rem, $weigh: bold);
+          color: $color-primary;
+          text-transform: uppercase;
+          margin-top: 30px;
+        }
+        &-cost{
+          color: #0F5F5C;
+          @extend %font-nav;
+          @include font($height: 1rem, $size: 7.2rem, $weigh: bold);
+          margin-top: 50px;
+        }
+        &-time{
+          margin-top: 30px;
+          font-weight: bold;
+        }
+        &-offer{
+          margin-top: 20px;
+          &:nth-child(4n){
+            margin-top: 25px;
+          }
+        }
+        &-button{
+          margin-top: 23px;
+          padding: 17px 26px;
+          @extend %font-nav;
+          @include font($height: 1rem, $size: 1.3rem, $weigh: bold);
+          color: #fff;
+          background-color: $color-text;
+          border-radius: 2px;
+          margin-bottom: 31px;
+          text-transform: uppercase;
+          border: none;
+          &:hover{
+            background-color:$color-primary;
+          }
+        }
+      }
+    } 
+  }
+  &-titles{
+    margin-top: 87px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-border{
+      width: 66px;
+      height: 2px;
+      background-color: #6FB048;
+      margin-top: 5px;
+    }
+    &-text{
+      font-size: 1.5rem;
+      margin-top: 19px;
+      width: 60%;
+      text-align: center;
+      line-height: 1.8rem;
+    }
+  } 
+  &-title2{
+   margin: auto;
+   margin-top: 78px;
+  } 
+  &-border2{
+    margin: auto;
+    width: 66px;
+    height: 2px;
+    background-color: #6FB048;
+    margin-top: 29px;
+  }
+  &-plans{
+    display: flex;
+    width: 80%;
+    margin: auto;
+  }
+  &-block{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 39px;
+  }
+  &-content-checkbox{
+    margin-top: 26px;
+    display: flex;
+    align-items: center;
+    width: 75%;
+  }
+  &-logo{
+    margin-top: 54px;
+  }
+  &-text1{
+    margin: auto;
+    margin-top: 26px;
+    @extend %font-title;
+    @include font($height: 1rem, $size: 3.2rem, $weigh: normal);
+    color: $color-primary;
+  }
+  &-border3{
+    width: 66px;
+    height: 2px;
+    background-color: #6FB048;
+    margin-top: 23px;
+  }
+  &-text2{
+    width: 30%;
+    text-align: center;
+    margin-top: 19px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  &-block-link{
+    margin-top: 37px;
+    font-size: 1.8rem;
+    margin-bottom: 96px;
+  }
+  &-link{
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #0F5F5C;
+    &:hover{
+      text-decoration: underline;
+      
+    }
+  }
+}
+

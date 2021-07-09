@@ -1,0 +1,85 @@
+.rectangle2{
+  color: $color-text;
+  
+  &-wrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: $color-background2;
+    margin-top: 127px;
+    background-image: url(/assets/img/Rectangle2/4.png);
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-position: 100px 190px;
+    height: 666px;
+    &-pic{
+      width: 189px;
+      height: 320px;
+      position: absolute;
+      top: 1805px;
+      left: 375px;
+    }
+  }
+  &-titles{
+    margin-top: 76px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-border{
+      width: 66px;
+      height: 2px;
+      background-color: #6FB048;
+      margin-top: 5px;
+    }
+    &-text{
+      font-size: 1.5rem;
+      margin-top: 19px;
+      width: 27%;
+      text-align: center;
+      line-height: 1.8rem;
+    }
+  }
+  &-content{
+    width: 30%;
+    margin-left: 58%;
+    margin-top: 174px;
+    &-title{
+
+    }
+   &-text{
+     line-height: 2rem;
+     margin-top: 16px;
+   } 
+  }
+  &-content-checkbox{
+    margin-top: 26px;
+    display: flex;
+    align-items: center;
+    
+    &:last-child{
+      margin-top: 11px;
+    }
+  }
+}
+#rectangle2{
+  display: none;
+}
+.pseudocheckbox::before {  
+  content: "\00A0";
+  display: inline-block;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  background-color: $color-background2;
+  border: 2px solid #B0B0B0;
+  border-radius: 50%;
+  margin-right: 6px;
+  vertical-align: baseline;
+  cursor: pointer;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: bold;
+  color: #808080;
+}
+input[type=checkbox]:checked + .pseudocheckbox::before { content: "\2713"; }

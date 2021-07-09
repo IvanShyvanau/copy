@@ -1,0 +1,21 @@
+@import "~normalize.css";
+
+
+//abstract
+@import"./abstract/_constants";
+@import"./abstract/_mixin";
+@import"./abstract/_placeholders";
+
+//base
+@import"./base/_base";
+
+//components
+@import"./components/_headerHome";
+@import"./components/_features";
+@import"./components/_rectangle2";
+@import"./components/_testimonials";
+@import"./components/_rectangle3";
+@import"./components/_pricing";
+@import"./components/_callToAction";
+@import"./components/_footer";
+

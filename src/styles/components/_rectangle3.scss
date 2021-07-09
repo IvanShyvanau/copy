@@ -1,0 +1,24 @@
+.rectangle3{
+  color: $color-text;
+  margin-top: 137px;
+  &-wrapper{
+    background-color: $color-background2;
+    height: 506px;
+    display: flex;
+    align-items: center;
+    background-image: url(/assets/img/Rectangle3/1.png);
+    background-repeat: no-repeat;
+    background-position:800px 100px ;
+    &-content{
+      display: flex;
+      flex-direction: column; 
+      width: 32%;
+      line-height: 2rem;
+      margin-left: 10%;
+      
+      &-text{
+        margin-top: 16px;
+      }
+    }
+  }
+}
